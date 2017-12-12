@@ -1,5 +1,10 @@
 #!/bin/bash
 # Winstyle++ ping
+if [ -z "$1" ]
+  then
+    echo "Usage: ./pinw.sh ip";
+    exit 1;
+fi
 up=0;
 down=0;
 total=1;
